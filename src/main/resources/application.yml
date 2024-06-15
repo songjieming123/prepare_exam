@@ -1,0 +1,12 @@
+rabbitmq :
+  username: root
+  password: 123456
+  virtual-host: /   #表示哪个交换机
+  listener:
+    simple:
+      acknowledge-mode: manual
+      retry:
+        enable: true   #b表示开启重试
+        max-attempts: 3   #最大重试次数为3次
+        initial-internal: 2000ms  #重试时间间隔为2s
+  address:        #配置集群位置
