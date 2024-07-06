@@ -16,4 +16,13 @@ public class AboutSpringBoot {
      *
 
      */
+
+    /*
+    * springboot同时可以处理多少请求？
+    * 可以在spring-autoconfiguration-metadata.json中查看
+    *  springboot可以处理多少请求，取决于内容的容易，我们一般默认使用tomcat容器
+    *  tomcat容器默认最大连接数： 8×1024 = 8182个请求
+    *
+    *
+    * */
 }
